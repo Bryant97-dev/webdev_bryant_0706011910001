@@ -24,9 +24,12 @@
                     <th scope="col">Description</th>
                     <th scope="col">Pages</th>
                     <th scope="col">Owned by</th>
+                    <th scope="col">Release Date</th>
+                    @auth()
                     <th scope="col">Updated At</th>
                     <th scope="col">Created At</th>
                     <th scope="col">Action</th>
+                    @endauth
                 </tr>
                 </thead>
                 <tbody>
@@ -38,9 +41,11 @@
                         <td>{{ $event->page}}</td>
                         
                         <td>{{ $event->creator->name }}</td>
-                        
+                        <td>{{ $event->event_date}}</td>
+                        @auth()
                         <td>{{ $event->updated_at }}</td>
                         <td>{{ $event->created_at }}</td>
+                        @endauth
                         @auth()
                         <td>
                             <form action="{{ route('event.destroy', $event) }}" method="post">

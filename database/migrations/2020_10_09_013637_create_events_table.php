@@ -27,7 +27,7 @@ class CreateEventsTable extends Migration
                 ->comment('Number of Attendant');
             $table->date('event_date');
             $table->timestamps();
-            //$table->softDeletes();
+            $table->softDeletes();
         });
     }
 

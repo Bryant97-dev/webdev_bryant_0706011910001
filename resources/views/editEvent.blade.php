@@ -21,10 +21,10 @@
                         <label>Pages:</label>
                         <textarea class="form-control" name="page">{{ $event->page }}</textarea>
                     </div>
-                   <!-- <div class="form-group">
-                        <label for="tanggal">Event Date:</label>
+                    <div class="form-group">
+                        <label for="tanggal">Release Date:</label>
                         <input type="date" class="form-control" name="event_date" value="{{ $event->event_date }}">
-                    </div>-->
+                    </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>

@@ -34,7 +34,7 @@
                         </select>
                     </div>    
                     <div class="form-group">
-                        <label for="tanggal">Event Date:</label>
+                        <label for="tanggal">Release Date:</label>
                         <input type="date" class="form-control" name="event_date">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
